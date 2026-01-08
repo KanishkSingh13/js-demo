@@ -38,3 +38,33 @@ myFunction()
     Number ---------> number */
 
 
+
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack(primitive) vs heap(reference)
+
+let channelname= "CodeWithKanishk"
+let anotherChannelname= channelname
+
+anotherChannelname= "KanzCodes"
+
+console.log(channelname)
+console.log(anotherChannelname)
+
+let user1 = {
+    email: "kanishksingh07.13@gmail.com",
+    upiID: "kanishk@oksbi",
+}
+
+let user2 = user1
+
+user2.email = "kanz@gmail.com"
+
+// both user1 and user2 will reflect the change as both are pointing to the same object in heap memory
+
+console.log(user1.email)
+console.log(user2.email)
+
